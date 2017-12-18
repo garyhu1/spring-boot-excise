@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+	<head>
+		<meta charset="UTF-8"/>
+		<title>超擎时空</title>
+		<link rel="shortcut icon"  href ="/images/favicon.ico"/>
+	</head>
+	<body>
+		<p align="center">Hello Spring Boot !</p>
+		<form action="/upload" method="post" enctype="multipart/form-data">
+			<input type="file" name="file"/><br/><br/>
+			<input type="submit" value="上传"/>
+		</form>
+		<br/>
+		<form>
+			<input type="text" id="content"/><br/><br/>
+		</form><br/>
+		<button id="btn">验证</button>
+		<div id="con"></div>
+		
+		
+		<form>
+			<label>用户 : <input type="text" id="username"/></label><br/><br/>
+			<label>密码 : <input type="password" id="password"/></label><br/><br/>
+		</form>
+		<button id="login">登录</button>
+		<div id="login_result"></div>
+	</body>
+	<script type="text/javascript" src="webjars/jquery/2.2.4/jquery.min.js"></script>
+	<script src="/js/main.js" th:src="@{js/main.js}"></script>
+</html>

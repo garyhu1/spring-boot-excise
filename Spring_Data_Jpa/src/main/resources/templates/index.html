@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+	<head>
+	    <meta charset="UTF-8" />
+	    <title>test</title>
+	</head>
+	<body>
+	    <h1>测试JPA</h1>
+	    <form method="post" action="/getUser">
+	    	<input type="number" name="id"/><br/><br/>
+	    	<input type="submit" value="提交"/>
+	    </form>
+	    <a href="/student">学生</a>
+	    <p><a href="/saveUser/赵四/5.do">保存数据</a></p>
+	    <form method="post" action="/addUser">
+	    	<label>姓名 : <input type="text" name="name"/></label><br/><br/>
+	    	<label>部门 : <input type="number" name="departmentId"/></label><br/><br/>
+	    	<input type="submit" value="添加数据"/>
+	    </form><br/><br/>
+	    
+	    <br/>
+	    <label>页数 : <input type="number" id="page"/></label><br/><br/>
+	    <label>数量 : <input type="number" id="num"/></label><br/><br/>
+	    <label>部门 : <input type="number" id="dep"/></label><br/><br/>
+	    <button id="btn">获取数据</button>
+	    <div id="result" style="height: 200px;width: 100px;"></div>
+	</body>
+	<script type="text/javascript" src="webjars/jquery/2.2.4/jquery.min.js"></script>
+	<script type="text/javascript" src="../../js/index.js" th:src="@{js/index.js}"></script>
+</html>
