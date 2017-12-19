@@ -13,6 +13,8 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import com.garyhu.model.Result;
 import com.garyhu.util.ResponseUtil;
 
+import io.swagger.annotations.Api;
+
 /**
  * 该页面用来处理可能出现的异常
  * @author garyhu
@@ -20,6 +22,7 @@ import com.garyhu.util.ResponseUtil;
  */
 @ControllerAdvice
 @ResponseBody
+@Api(description="统一处理错误")
 public class ExceptionHandlerAdvice {
 
 	@ExceptionHandler(MethodArgumentNotValidException.class)

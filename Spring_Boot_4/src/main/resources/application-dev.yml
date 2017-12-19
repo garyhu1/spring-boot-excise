@@ -1,3 +1,6 @@
+#应用设置
+app:
+  domain: http://127.0.0.1/  #网站应用根域名
 spring: 
    #数据库配置
    datasource:

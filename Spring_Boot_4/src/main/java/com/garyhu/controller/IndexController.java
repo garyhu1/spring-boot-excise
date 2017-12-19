@@ -6,6 +6,7 @@ import java.util.Date;
 
 import javax.validation.Valid;
 
+import org.springframework.context.annotation.Bean;
 import org.springframework.format.datetime.DateFormatter;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -26,7 +27,15 @@ import com.garyhu.model.User;
 import com.garyhu.util.ResponseUtil;
 import com.garyhu.validate.Phone;
 
+import io.swagger.annotations.Api;
+import springfox.documentation.service.ApiInfo;
+import springfox.documentation.spi.DocumentationType;
+import springfox.documentation.spring.web.plugins.Docket;
+import springfox.documentation.swagger2.annotations.EnableSwagger2;
+
 @Controller
+@EnableSwagger2
+@Api(description="主页")
 public class IndexController {
 	
 	@InitBinder
@@ -74,5 +83,5 @@ public class IndexController {
 		System.out.println("login : "+user.getUsername());
 		return ResponseUtil.success(user);
 	}
-
+	
 }

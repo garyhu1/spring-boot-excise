@@ -13,7 +13,10 @@ import org.springframework.web.bind.annotation.ResponseBody;
 
 import com.garyhu.validate.WorkInfoForm;
 
+import io.swagger.annotations.Api;
+
 @Controller
+@Api(description="验证")
 public class ValidatedController {
 
 	@PostMapping("/validate")
