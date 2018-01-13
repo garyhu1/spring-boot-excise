@@ -1,0 +1,12 @@
+{
+	"swagger":"3.0",
+    "info": {
+        "description":”这是一个项目简单实例”,
+        "version":"1.0",
+        "title":"某系统接口"
+     },
+     "base Path":"/api/vl"
+     "consumes":[
+          "application/x-www-form-urlencode"
+     ]
+}
